@@ -1,9 +1,9 @@
 # 01_Assemblies
 *Written by: Jorge Eduardo Amaya Romero*
 
-#Description: Merger, sort and mark duplicates of alignments produced with stampy.
+## Description: Merger, sort and mark duplicates of alignments produced with stampy.
 
-##Scripts:
+## Scripts:
 
 1. subordinate_make_dict.sh creates the reference dictionary 
 2. subordinate_merge.sh	merge the bam files produced by stampy       
@@ -14,13 +14,13 @@
 7.1. subordinate_call_variants.sh calls the variants with HaplotypeCaller  
 7.2. subordinate_call_variants2.sh calls the variants with UnifiedGnotyper
 
-##Usage
+## Usage
 
 ```
 sbatch master.sh.
 ```
 
-##Results
+## Results
 
 1. A directory per sample with the clean bam file and vcf file with variants
 
