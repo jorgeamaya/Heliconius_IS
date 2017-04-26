@@ -1,7 +1,8 @@
 # 01_Assemblies
 *Written by: Jorge Eduardo Amaya Romero*
 
-## Description: Merger, sort and mark duplicates of alignments produced with stampy.
+## Description: 
+Merger, sort and mark duplicates of alignments produced with stampy.
 
 ## Scripts:
 
