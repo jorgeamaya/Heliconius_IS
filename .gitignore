@@ -1,6 +1,8 @@
 01_Assemblies/Data/*
 01_Assemblies/Results/* 
-02_Merge_Sort_Remove  
+02_Merge_Sort_Remove/tmp*
+02_Merge_Sort_Remove/Results/*
+02_Merge_Sort_Remove/Data/*
 Data  
 Kelley_Harris.tar.gz
 Software_Repository
