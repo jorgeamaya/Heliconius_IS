@@ -1,5 +1,8 @@
-01_Assemblies  
+01_Assemblies/Data/*
+01_Assemblies/Results/* 
 02_Merge_Sort_Remove  
 Data  
 Kelley_Harris.tar.gz
 Software_Repository
+*/*.err
+*/*.out
