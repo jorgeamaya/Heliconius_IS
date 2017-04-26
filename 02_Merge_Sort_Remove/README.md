@@ -12,8 +12,8 @@ Merger, sort and mark duplicates of alignments produced with stampy.
 4. subordinate_remove_duplicates.sh marks duplicates
 5. subordinate_realign_step1.sh determines the intervals to realign the indels
 6. subordinate_realign_step2.sh realigns the indels
-7.1. subordinate_call_variants.sh calls the variants with HaplotypeCaller  
-7.2. subordinate_call_variants2.sh calls the variants with UnifiedGnotyper
+7. subordinate_call_variants.sh calls the variants with HaplotypeCaller  
+7. subordinate_call_variants2.sh calls the variants with UnifiedGnotyper
 
 ## Usage
 
