@@ -1,4 +1,4 @@
-# 01_Assemblies
+# 02_Merge_Sort_Remove
 *Written by: Jorge Eduardo Amaya Romero*
 
 ## Description: 
