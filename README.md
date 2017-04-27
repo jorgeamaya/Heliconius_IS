@@ -12,6 +12,10 @@ A series of scripts to assemble and analize genomic data of Heliconius butterfli
 * 01_Assemblies
 * 02_Merge_Sort_Remove
 
+## Genomic assemblies with BWA and variant calling with GATK
+* 03_Assemblies
+* 04_Merge_Sort_Remove
+
 ## Clone this repository
 To clone this repository just do:
 
