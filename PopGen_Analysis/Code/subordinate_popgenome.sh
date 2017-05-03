@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#Purpose: Master script to run SLIM simulations in Odyssey
+#Purpose: Master script to obtain popstats
 #Written by: Jorge Eduardo Amaya Romero
 #Date: 3/6/2017
 

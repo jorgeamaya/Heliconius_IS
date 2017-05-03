@@ -7,12 +7,14 @@ Calculates Fst, pi and Dxy statistics in slidding windows.
 ## Scripts:
 
 1. subordinate_vcftogeno.sh converts VCF file to geno file. 
-2. subordinate_popgenome.sh calculates Fst, pi and Dxy. 
+2. subordinate_popgenome.sh calculates Fst, pi and Dxy in sliwding windows.
+3. subordinate_f4_D.sh calculates the f and D statistics. 
+4. subordinate_tree.sh calculates trees in sliding windows.
 
 ## Usage
 
 ```
-sbatch master.sh #For now, this script can be runned as ./master.sh. When new functions are added, this will be discouraged to allow using dependencies.
+sbatch master.sh.
 ```
 
 ## Results

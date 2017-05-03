@@ -1,17 +1,17 @@
 #!/bin/bash
 
-#Purpose: Master script to parse VCF files
+#Purpose: Master script to obtain tree in sliding windows
 #Written by: Jorge Eduardo Amaya Romero
 #Date: 3/6/2017
 
 #SBATCH -p general
-#SBATCH -J statgenome
+#SBATCH -J popgenome
 #SBATCH -n 1
 #SBATCH -N 1
 #SBATCH -t 5-0:00
 #SBATCH --mem 40000
-#SBATCH -o statgenome%j.out
-#SBATCH -e statgenome%j.err
+#SBATCH -o popgenome%j.out
+#SBATCH -e popgenome%j.err
 
 source new-modules.sh; module load python/2.7.11-fasrc01
 
@@ -22,10 +22,10 @@ mkdir -p /scratch/$USER/$SLURM_JOBID
 cd /scratch/$USER/$SLURM_JOBID
 
 mkdir PopGenome
+cp $star_dir/Code/genomics_general/genomics* .
 #Copy the data for the analysis
-python2.7 $star_dir/Code/genomics_general/VCF_processing/parseVCF.py -i $star_dir/Data/$1 --skipIndel --minQual 30 | gzip > PopGenome/${1##*/}.geno.gz 
-
-cp -r PopGenome $star_dir/Results/.
+python2.7 $star_dir/Code/genomics_general/phylo/phyml_sliding_windows.py -g $star_dir/Results/PopGenome/${1##*/}.geno.gz --prefix PopGenome/${1##*/}.raxml.w$2 -w $2 --windType sites --model GTR --genoFormat phased -T 1 
+cp -r PopGenome/* $star_dir/Results/PopGenome/.
 
 #Clean  scratch
 cd $star_dir
