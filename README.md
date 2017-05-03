@@ -7,6 +7,7 @@ A series of scripts to assemble and analize genomic data of Heliconius butterfli
 
 ## Phylogenetic analyisis
 * Saguaro_Analysis
+* PopGen_Analysis
 
 ## Genomic assemblies with Stampy and variant calling with GATK
 * 01_Assemblies
