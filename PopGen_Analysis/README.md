@@ -9,7 +9,8 @@ Calculates Fst, pi and Dxy statistics in slidding windows.
 1. subordinate_vcftogeno.sh converts VCF file to geno file. 
 2. subordinate_popgenome.sh calculates Fst, pi and Dxy in sliwding windows.
 3. subordinate_f4_D.sh calculates the f and D statistics. 
-4. subordinate_tree.sh calculates trees in sliding windows.
+4. subordinate_tree_phmyl.sh calculates trees in sliding windows using phyml.
+5. subordinate_tree_raxml.sh calculate trees in sliding windows using raxml.
 
 ## Usage
 

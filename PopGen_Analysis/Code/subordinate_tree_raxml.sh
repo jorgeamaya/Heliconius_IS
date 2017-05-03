@@ -13,7 +13,7 @@
 #SBATCH -o popgenome%j.out
 #SBATCH -e popgenome%j.err
 
-source new-modules.sh; module load python/2.7.11-fasrc01
+source new-modules.sh; module load python/2.7.11-fasrc01; module load raxml/8.2.4-fasrc01
 
 #Create a directory in scratch
 star_dir=$PWD
