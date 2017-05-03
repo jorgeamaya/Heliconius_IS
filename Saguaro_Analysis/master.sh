@@ -17,6 +17,6 @@
 ln -s /path/to/file/ Data/.
 sbatch Code/master_saguaro.sh Hel_Par_Ele_H12.vcf ~/Software/Software_Repository/saguarogw-code-44.zip
 
-#To run an example you can also downloand a sample file from the Human 1000 Genome Project. Uncomment the following lines and comment the previous lines
+#You can also download a sample file from the Human 1000 Genome Project. Uncomment the following lines and comment the previous ones.
 #tabix -h ftp://ftp-trace.ncbi.nih.gov/1000genomes/ftp/release/20101123/interim_phase1_release/ALL.chr12.phase1.projectConsensus.genotypes.vcf.gz 12:10000-110000 > Data/1000.vcf
 #sbatch Code/master_saguaro.sh 1000.vcf /path/to/saguaro.zip #Provide the name of the vcf file and the path to saguaro's zip file

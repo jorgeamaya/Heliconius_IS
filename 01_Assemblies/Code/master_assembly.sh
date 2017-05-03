@@ -17,15 +17,18 @@ index_id=Results/Hmel2_sta
 clean_reference=Results/Heliconius_melpomene_melpomene_Hmel2_-_scaffolds.fa #See master
 #Build the indexes
 #jobid_stampy_index=`sbatch Code/index_stampy.sh Results/Hmel2_sta Results/Heliconius_melpomene_melpomene_Hmel2_-_scaffolds.fa | cut -d ' ' -f 4` 
-jobid_stampy_index=`sbatch Code/index_stampy.sh $index_id $clean_reference | cut -d ' ' -f 4` 
+#jobid_stampy_index=`sbatch Code/index_stampy.sh $index_id $clean_reference | cut -d ' ' -f 4` 
 
 #Make the new assemblies
-mkdir Results/Assemblies_Stampy
+#mkdir Results/Assemblies_Stampy
 
 fix=100
-for dir in /n/mallet_lab/edelman/elevatus_pardalinus/kanchon_resequence/HEL_*; do
+#for dir in /n/mallet_lab/edelman/elevatus_pardalinus/kanchon_resequence/HEL*; do
+for dir in /n/mallet_lab/edelman/elevatus_pardalinus/kanchon_resequence/HEL_20*; do
 	echo $dir
-	for f in $dir/*; do
+	for f in $dir/*\1.fastq.gz; do 
+	#for f in $dir/*R1.fastq.gz; do
+	#for f in $dir/*TGACCA*R1.fastq.gz; do
     		r="${f/1.fastq.gz/2.fastq.gz}"	
 		n="${f/.R1.fastq.gz/}"
 		echo "  f: $f"

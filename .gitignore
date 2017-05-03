@@ -5,6 +5,11 @@
 02_Merge_Sort_Remove/Data/*
 Data  
 Kelley_Harris.tar.gz
+Kelley_Harris
 Software_Repository
 */*.err
 */*.out
+Process_Slim
+PopGen_Analysis/Code/genomics_general
+PopGen_Analysis/Results
+PopGen_Analysis/Data

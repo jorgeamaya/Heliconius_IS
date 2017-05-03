@@ -8,8 +8,8 @@
 #SBATCH -J sta_assemble
 #SBATCH -n 1
 #SBATCH -N 1
-#SBATCH -t 0-12:00
-#SBATCH --mem 1000
+#SBATCH -t 1-00:00
+#SBATCH --mem 10000
 #SBATCH -o sta_assemble%j.out
 #SBATCH -e sta_assemble%j.err
 
